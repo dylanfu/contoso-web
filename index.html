@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Contoso Bank</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Fonts -->
+        <!-- Source Sans Pro -->
+        <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400i|Source+Sans+Pro:300,400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+        
+        <!-- CSS -->
+
+        <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/themefisher-fonts.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Responsive Stylesheet -->
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <!-- js for chatbot -->
+        <script type="text/javascript">
+            function openChat() {
+                var frame = document.getElementById("chat-frame");
+                frame.className = "";
+                var img = document.getElementById("chat-button");
+                img.className = "hide";
+            }
+            function closeChat() {
+                var frame = document.getElementById("chat-frame");
+                frame.className = "hide";
+                var img = document.getElementById("chat-button");
+                img.className = "";
+            }
+        </script>
+    </head>
+
+    <body id="body">
+
+    
+
+	    <!-- 
+	    Header start
+	    ==================== -->
+        <div class="container">
+            <nav class="navbar navigation " id="top-nav">
+                <a class="navbar-brand logo" href="#">
+                    <img src="images/logo.png" alt="">
+                </a>
+
+              <button class="navbar-toggler hidden-lg-up float-lg-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" >
+                  <i class="tf-ion-android-menu"></i>
+              </button>
+              <div class="collapse navbar-toggleable-md" id="navbarResponsive">
+                <ul class="nav navbar-nav menu float-lg-right" id="top-nav">
+                  <li class=" active">
+                    <a href="#">HOME</a>
+                  </li>
+                  <li class="">
+                    <a href="#about">ABOUT</a>
+                  </li>
+                  <li class="">
+                    <a href="#service">SERVICES</a>
+                  </li>
+                  <li class="">
+                    <a href="#contact">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+
+	    <section class="hero-area">
+	        <div class="container">
+	            <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img src="images/img.png" alt="">
+                    </div>
+	                <div class="col-md-6">
+	                    <div class="block">
+	                        <h1 class="">Welcome to Contoso</h1>
+	                        <p>Contoso Bank strives to consistently provide its customers with outstanding service and innovative financial solutions. We're dedicated to providing simple financial products that allow our customers to bank with us how and when they want.</p>
+	                    </div>
+	                </div>
+	            </div><!-- .row close -->
+            </div><!-- .container close -->
+            
+	    </section><!-- header close -->
+        
+        <div id="chat">
+            <img id="chat-button" src="images/chat_img.png" onclick="openChat()" />
+            <div id="chat-frame" class="hide">
+                <iframe src='https://webchat.botframework.com/embed/chatbot_contoso?s=keoBqbDxE8M.cwA.nnU.LtoEOPZNqR8DAjU-yXKapZbAxg-NK1tUXpUBmWQrlT0'></iframe>
+                <img src="images/minus.png" onclick="closeChat()" />
+            </div><!-- .row close -->
+        </div><!-- .container close -->
+
+        <footer>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <a href="" class="footer-logo">Contoso Bank</a>
+                            <ul class="menu">
+                                <li class=" active">
+                                    <a href="#">HOME</a>
+                                </li>
+                                <li class="">
+                                    <a href="#about">ABOUT</a>
+                                </li>
+                                <li class="">
+                                    <a href="#service">SERVICES</a>
+                                </li>
+                                <li class="">
+                                    <a href="#contact">CONTACT</a>
+                                </li>
+                            </ul>
+                            <p class="copyright-text">Copyright &copy; Contoso Bank Limited. | All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Js -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+        
+    </body>
+</html>
